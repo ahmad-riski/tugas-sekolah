@@ -12,6 +12,8 @@
 </head>
 <body>
   <h1>Halo Dunia!</h1>
-  <script src="script.js"></script>
+  <button x-data="{ count: 0 }" @click="count++">
+    Click <span x-data="count"></span>
+  </button>
 </body>
 </html>
