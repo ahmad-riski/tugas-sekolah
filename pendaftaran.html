@@ -8,43 +8,30 @@
       font-family: Arial, sans-serif;
       padding: 20px;
     }
-    form {
+    .form-container {
+      display: grid;
+      gap: 15px;
       max-width: 400px;
       margin: auto;
     }
     .flex-container {
       display: flex;
       gap: 10px;
-      margin-top: 10px;
-    }
-    label {
-      display: block;
-      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <form action="/submit" method="POST">
-    <h2> Pendaftaran</h2>
-    <label>
-      Nama:
-      <input type="text" name="nama" required>
-    </label>
 
-    <label>
-      Username:
-      <input type="text" name="username" required>
-    </label>
+  <form class="form-container" action="/register" method="POST">
+    <h2>Pendaftaran</h2>
 
-    <label>
-      Password:
-      <input type="password" name="password" required>
-    </label>
+    <input type="text" name="nama" placeholder="Nama" required>
 
-    <label>
-      No. KTP:
-      <input type="text" name="ktp" required>
-    </label>
+    <input type="text" name="username" placeholder="Username" required>
+
+    <input type="password" name="password" placeholder="Password" required>
+
+    <input type="text" name="hp" placeholder="No HP" required>
 
     <div class="flex-container">
       <label><input type="radio" name="gender" value="Laki-laki" required> Laki-laki</label>
@@ -58,4 +45,4 @@
   </form>
 
 </body>
-</html>
+  </html>
