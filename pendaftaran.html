@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pendaftaran</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+    }
+    .flex-container {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Form Pendaftaran</h2>
+  <form action="/submit" method="POST">
+    <label>
+      Nama:
+      <input type="text" name="nama" required>
+    </label>
+
+    <label>
+      Username:
+      <input type="text" name="username" required>
+    </label>
+
+    <label>
+      Password:
+      <input type="password" name="password" required>
+    </label>
+
+    <label>
+      No. KTP:
+      <input type="text" name="ktp" required>
+    </label>
+
+    <div class="flex-container">
+      <label><input type="radio" name="gender" value="Laki-laki" required> Laki-laki</label>
+      <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+    </div>
+
+    <div class="flex-container">
+      <button type="reset">Reset</button>
+      <button type="submit">Daftar</button>
+    </div>
+  </form>
+
+</body>
+</html>
